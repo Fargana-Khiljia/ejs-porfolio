@@ -9,19 +9,26 @@
   <body>
     <nav class="top">
       <ul>
-        <img src="<%= img %>" alt="author's logo" class="logo"/>
+        <img src="<%= logo %>" alt="author's logo" class="logo"/>
         <li class="home"><a class="home" href="/" target="_self">Home</a></li>
         <li class="home"><a class="home" href="/projects" target="_self">My Projects</a></li>
         <li class="home"><a class="home" href="/about" target="_self">About Me</a></li>
-        <li class="home"><a class="home" href="services.html" target="_self">Services</a></li>
+        <li class="home"><a class="home" href="/services" target="_self">Services</a></li>
         <li class="home"><a class="home" href="/contact" target="_self">Contact</a></li>
       </ul>
     </nav>
     <main class="about">
       <h1 id="about-me">About Me</h1>
+
+      <%# This image src should be changed to be an image of you. %>
+
       <img src="http://placekitten.com/200/300" alt="picture of the author"/>
       <p><%= message %></p>
+
+      <%# The href for this anchor needs to be the file location for your resume. The resume should be placed in the public/assets folder %>
+
       <a href="" target="_blank" class="resume">My Resume</a>
+
     </main>
   </body>
 </html>
