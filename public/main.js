@@ -6,13 +6,15 @@ const port = 3000;
 
 app.set("view engine", "ejs")
 app.use(express.static(__dirname + '/public'))
+app.use("/styles",express.static(__dirname + "/styles"));
+app.use("/assets",express.static(__dirname + "/assets"));
 
 app.get("/", function(req, res){
-  res.render("index", {title: "Hello World", message: "this is the message", img: "hassan-logo.png"})
+  res.render("index", {title: "Hello World", message: "this is the message", img: "assets/hassan-logo.png"})
 })
 
 app.get("/about", function(req, res){
-  res.render("about", {title: "About Me", message: "This is a message that tells people a little bit about myself", img: "hassan-logo.png"})
+  res.render("about", {title: "About Me", message: "This is a message that tells people a little bit about myself", img: "assets/hassan-logo.png"})
 })
 
 app.get("/projects", function(req, res){
@@ -20,7 +22,7 @@ app.get("/projects", function(req, res){
 })
 
 app.get("/contact", function(req, res){
-  res.render("contact", {title: "Contact Me", message: "I can be reached with any of these contacts here", img: "hassan-logo.png"})
+  res.render("contact", {title: "Contact Me", message: "I can be reached with any of these contacts here", img: "assets/hassan-logo.png"})
 })
 
 

@@ -18,9 +18,19 @@
       </ul>
     </nav>
     <main class="homepage">
-      <h1 id="name">Anthony McMellen</h1>
-      <h2>Random Info</h2>
+      <h2>Contact Me</h2>
       <p><%= message %></p>
+      <ul class="contact-info">
+        <li>gmail</li>
+        <li>phone</li>
+      </ul>
+      <form action="contact_submit" method="post" accept-charset="utf-8">
+        <input type="text" value="" name="name" placeholder="Full Name"/> 
+        <input type="text" value="" name="email-address" placeholder="Email"/> 
+        <input type="text" value="" name="phone" placeholder="Phone Number"/> 
+        <input type="text" value="" name="message" placeholder="Message"/> 
+        <input type="submit" value="Submit" name="Submit" id="contact-submit"/>
+      </form>
     </main>
   </body>
 </html>
