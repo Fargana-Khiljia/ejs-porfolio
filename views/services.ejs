@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/styles/styles.css" type="text/css" >
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title><%= title %></title>
+  </head>
+  <body>
+    <nav class="top">
+      <ul>
+        <img src="<%= logo %>" alt="author's logo" class="logo"/>
+        <li class="home"><a class="home" href="/" target="_self">Home</a></li>
+        <li class="home"><a class="home" href="/projects" target="_self">My Projects</a></li>
+        <li class="home"><a class="home" href="/about" target="_self">About Me</a></li>
+        <li class="home"><a class="home" href="/services" target="_self">Services</a></li>
+        <li class="home"><a class="home" href="/contact" target="_self">Contact</a></li>
+      </ul>
+    </nav>
+    <main class="projects">
+      <h1 id="about-me">My Services</h1>
+      <section class="dark">
+        <img src="<%= p1 %>" alt="image of first project"/>
+        <p class="project-description"><%= p1des %></p>
+      </section>
+      <section>
+        <img src="<%= p2 %>" alt="image of second project"/>
+        <p class="project-description"><%= p2des %></p>
+      </section>
+      <section class="dark">
+        <img src="<%= p3 %>" alt="image of third project"/>
+        <p class="project-description"><%= p3des %></p>
+      </section>
+    </main>
+  </body>
+</html>
